@@ -1,0 +1,26 @@
+name: Deploy Container App
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  deployApp:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Log in to Azure
+      uses: azure/login@v1.4.6
+      with:
+        creds: ${{ secrets.CAPP_AZ_CREDS }}
+
+    - name: Build and deploy Container App
+      uses: azure/container-apps-deploy-action@v0
+      with:
+        imageToDeploy: mcr.microsoft.com/azuredocs/containerapps-helloworld:latest
+        resourceGroup: containerapp
+        #imageToDeploy: crakszarablah.azurecr.io/azurevote:445345345345345
+        #acrName: crakszarablah
+        #acrUsername: ${{ secrets.REGISTRY_USERNAME }}
+        #acrPassword: ${{ secrets.REGISTRY_PASSWORD }}
