@@ -18,7 +18,6 @@ jobs:
     - name: Build and deploy Container App
       uses: azure/container-apps-deploy-action@v0
       with:
-        #imageToDeploy: mcr.microsoft.com/azuredocs/containerapps-helloworld:latest
         resourceGroup: containerapp
         imageToDeploy: crazk8sfk9l7tj5rxbdipvfs.azurecr.io/azuredocs/azure-vote-
         acrName: crazk8sfk9l7tj5rxbdipvfs
