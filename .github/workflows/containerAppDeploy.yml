@@ -23,4 +23,4 @@ jobs:
         imageToDeploy: crazk8sfk9l7tj5rxbdipvfs.azurecr.io/azuredocs/azure-vote-
         acrName: crazk8sfk9l7tj5rxbdipvfs
         acrUsername: ${{ secrets.crazk8sfk9l7tj5rxbdipvfs }}
-        acrPassword: ${{ secrets.j6y2QTriAWwW1po9GvYjtUhoWyFiQ0mDfNNHrB7ZC6+ACRB5O+9/ }}
+        acrPassword: ${{ secrets.j6y2QTriAWwW1po9GvYjtUhoWyFiQ0mDfNNHrB7ZC6+ACRB5O+9 }}
