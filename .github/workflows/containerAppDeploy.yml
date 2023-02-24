@@ -20,7 +20,7 @@ jobs:
       with:
         resourceGroup: containerapp
         imageToDeploy: crazk8sfk9l7tj5rxbdipvfs.azurecr.io/azuredocs/azure-vote-7b3cb867c04385f583d1525cdc95912a2f54e52b
-        #acrName: crazk8sfk9l7tj5rxbdipvfs
+        acrName: crazk8sfk9l7tj5rxbdipvfs
         acrUsername: ${{ secrets.REGISTRY_USERNAME }}
         acrPassword: ${{ secrets.REGISTRY_PASSWORD }}
         
